@@ -1,6 +1,6 @@
 git status 查看工作区的文件状态 是否提交到临时区
 git add 把工作区添加到临时区
-git commit * "message" 提交文件到 本地库
+git commit -m "message" 提交文件到 本地库 -m是分支
 
 git reset --soft 把本地库 回退到临时区版本
 git reset --mixed 把本地库和临时区 回退到工作区版本
