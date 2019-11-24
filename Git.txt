@@ -98,3 +98,6 @@ cd existing_repo
 git remote add origin http://192.168.1.188:8888/wei/RPC.git
 git push -u origin --all
 git push -u origin --tags
+
+![](C:\Users\WEI\Desktop\±Ê¼Ç\git.jpg)
+
