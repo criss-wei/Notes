@@ -68,3 +68,33 @@ ssh-keygen
 秘钥存储目录：C:\Users\用户\.ssh
 公钥名称：id_rsa.pub
 私钥名称：id_rsa
+
+
+
+Command line instructions
+
+Git global setup
+git config --global user.name "wei"
+git config --global user.email "1944231878@qq.com"
+
+Create a new repository
+git clone http://192.168.1.188:8888/wei/RPC.git
+cd RPC
+touch README.md
+git add README.md
+git commit -m "add README"
+git push -u origin master
+
+Existing folder
+cd existing_folder
+git init
+git remote add origin http://192.168.1.188:8888/wei/RPC.git
+git add .
+git commit -m "Initial commit"
+git push -u origin master
+
+Existing Git repository
+cd existing_repo
+git remote add origin http://192.168.1.188:8888/wei/RPC.git
+git push -u origin --all
+git push -u origin --tags
