@@ -8,4 +8,5 @@ git log 查看提交记录
 git log --pretty=oneline 打印到一行
 git log --oneline 减少hash值的长度
 git reset --hard version(版本号)
-git reset --hard HEAD^ 回退到上一个版本
+git reset --hard HEAD^ 回退到上一个版本  多个^表示回退多个版本
+git reflog 查看回退操作的日志
