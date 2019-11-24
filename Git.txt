@@ -1,6 +1,6 @@
 git status 查看工作区的文件状态 是否提交到临时区
 git add 把工作区添加到临时区
-git commit -m "message" 提交文件到 本地库 -m是分支
+git commit -m "message" 提交文件到 本地库 -
 
 git reset --soft 把本地库 回退到临时区版本
 git reset --mixed 把本地库和临时区 回退到工作区版本
@@ -10,3 +10,4 @@ git log --oneline 减少hash值的长度
 git reset --hard version(版本号)
 git reset --hard HEAD^ 回退到上一个版本  多个^表示回退多个版本
 git reflog 查看回退操作的日志
+git checkout branch1 通过设置默认的分区名 让下一次提交到那个分支下
