@@ -11,3 +11,60 @@ git reset --hard version(版本号)
 git reset --hard HEAD^ 回退到上一个版本  多个^表示回退多个版本
 git reflog 查看回退操作的日志
 git checkout branch1 通过设置默认的分区名 让下一次提交到那个分支下
+git erge branch1 把当前分支追加合并到主分支后面 test
+
+
+
+第一次使用git的时候
+设置用户名：
+git config --global user.name 【git用户名】
+设置邮箱：
+git config --global user.email 【邮箱地址】
+查看当前用户信息：
+git config --list 
+操作步骤：
+初始化git仓库：
+git init
+追踪文件：
+git add 【文件名】
+将工作目录中的文件全部添加到暂存区：
+git add .
+查看文件状态：
+git status
+向本地仓库中提交代码：
+git commit -m  【提交时的描述】
+用暂存区中的文件覆盖工作目录中的文件：
+git checkout  【文件名】
+将文件从暂存区中删除：
+git rm --cached 【文件名】
+将 git 仓库中指定的更新记录恢复出来，并且覆盖暂存区和工作目录：
+git rest --hard commitID
+查看提交记录：
+git log
+克隆远程仓库文件到本地仓库：
+git clone 【 仓库地址】
+把本地仓库的文件提交到远程仓库：
+git push 【仓库地址】【分支名称】 
+git push  -u【仓库地址】【分支名称】
+-u 记住推送地址及分支，下次推送只需要输入git push即可
+设置仓库别名：
+git remote add 【自定义仓库别名】【远程仓库地址】
+拉取远程仓库中最新的版本到本地仓库：
+git pull 【仓库地址】【分支名称】
+查看分支：
+git branch
+创建分支：
+git branch 【分支名称】
+切换分支：
+git checkout 【分支名称】
+合并某分支到当前分支：
+git merge 【分支名称】
+删除分支：
+git branch -d 【分支名称】（分支被合并后才允许删除）（-D 强制删除）
+git忽略清单文件名称：
+.gitignore 
+生成秘钥：
+ssh-keygen 
+秘钥存储目录：C:\Users\用户\.ssh
+公钥名称：id_rsa.pub
+私钥名称：id_rsa
