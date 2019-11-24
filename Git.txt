@@ -7,3 +7,5 @@ git reset --mixed 把本地库和临时区 回退到工作区版本
 git log 查看提交记录
 git log --pretty=oneline 打印到一行
 git log --oneline 减少hash值的长度
+git reset --hard version(版本号)
+git reset --hard HEAD^ 回退到上一个版本
